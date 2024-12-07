@@ -1,0 +1,61 @@
+.curTemp{
+  border: thin solid black;
+  border-radius: 1rem;
+  font-size: 2.25rem;
+  padding: 1rem;
+  text-align: center;
+  width: 10%;
+  margin: 0 auto;
+}
+
+.forecast__widget{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.forecast__widget--period{
+  border: thin solid black;
+  border-radius: 1rem;
+  padding: 1rem;
+  width: 20%;
+  margin-bottom: .5rem;
+  display: grid;
+  margin: .5rem .5rem .5rem .5rem;
+  grid-template-areas:
+    "icon name temp"
+    "detail detail detail";
+  align-items: start;
+}
+.forecast__widget--icon{
+  padding: .5rem;
+  grid-area: icon;
+  border-radius: 1rem;
+}
+
+.forecast__widget--name{
+  align-self: center;
+  font-size: 1.5rem;
+  grid-area: name;
+}
+.forecast__widget--temp{
+  align-self: center;
+  font-size: 1.75rem;
+  grid-area: temp;
+
+}
+.forecast__widget--detail{
+  grid-area: detail;
+
+}
+
+
+.conditions__widget{
+  border: thin solid black;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  line-height: .25;
+  width: 17%;
+  padding: 1rem;
+  margin: 0 auto;
+}
