@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="https://kit.fontawesome.com/0f567f2661.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NWS Weather Forecast Widget</title>
+  </head>
+  <body>
+    <!-- Top of Page Widget with just the current temperature -->
+     <h2>This is a widget that simply displays the current temperature and an appropriate icon.</h2>
+    <div id="curTemp" class="curTemp"></div>
+
+    <!-- Forcast widget with highs and lows and so forth -->
+     <h2>This widget displays up to a 7 day forecast</h2>
+    <div id="forecast" class="forecast"></div>
+
+    <!-- Detailed reading of most current data including wind, barometer, temperature, etc. -->
+     <h2>This widget displays current data but contains more complete data like wind speed and berometric pressure.</h2>
+     <div id="conditions" class="conditions"></div>
+
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
