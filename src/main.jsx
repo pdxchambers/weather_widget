@@ -4,17 +4,21 @@ import Temperature from './components/temperature'
 import Forecast from './components/forecast'
 import Conditions from './components/conditions'
 
-const temperatureNode = document.getElementById('curTemp')
-const forecastNode = document.getElementById('curForcast')
+if (document.body.contains(document.getElementById('curTemp'))) {
+  createRoot(document.getElementById('curTemp')).render(
+    <Temperature />
+  )
+}
 
-createRoot(document.getElementById('curTemp')).render(
-  <Temperature />
-)
+if (document.body.contains(document.getElementById('forecast'))) {
+  createRoot(document.getElementById('forecast')).render(
+    <Forecast />
+  )
+}
 
-createRoot(document.getElementById('forecast')).render(
-  <Forecast />
-)
 
-createRoot(document.getElementById('conditions')).render(
-  <Conditions />
-)
+if (document.body.contains(document.getElementById('conditions'))) {
+  createRoot(document.getElementById('conditions')).render(
+    <Conditions />
+  )
+}
