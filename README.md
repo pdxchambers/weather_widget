@@ -12,9 +12,10 @@ Leverages the National Weather Service (NWS) API to pull weather data and presen
 3. Build the project with `npm run build`
 4. Locate the `dist/assets` folder, copy the .js file to your site and include it in the footer as you would any other scripts.
 5. On the webpage you want to install the widget, create and combination of three block elements (`div` or `section` work nicely) and give them an id of `curTemp`, `forecast`, and `conditions`.
--- `curTemp` - Displays the current temperature.
--- `forecast` - Displays a full seven day forecast.
--- `conditions` - Displays the latest data for the area such as temperature, realitive humidity, and wind speed.
+
+- `curTemp` - Displays the current temperature.
+- `forecast` - Displays a full seven day forecast.
+- `conditions` - Displays the latest data for the area such as temperature, realitive humidity, and wind speed.
 
 ## Post Installation
 Once you've got your widgets displaying on the page, feel free to style them however you'd like. You can inspect the elements in our browser's Dev Tools to see the class structure for each widget. 
