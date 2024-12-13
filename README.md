@@ -11,23 +11,21 @@ Leverages the National Weather Service (NWS) API to pull weather data and presen
 2. Open a terminal and run `npm i`
 3. Build the project with `npm run build`
 4. Locate the `dist/assets` folder, copy the .js file to your site and include it in the footer as you would any other scripts.
-4. On the webpage you want to install the widget, create three block elements (`div` or `section` work nicely) and give them an id of `curTemp`, `forecast`, and `conditions`.
-
-*NOTE* - All three sections need to be in place, otherwise React will throw an invalid DOM element error. This will be fixed in a future release, but for now you can simply hide 
-the unwanted element(s) with CSS or JavaScript as a work around.
+5. On the webpage you want to install the widget, create and combination of three block elements (`div` or `section` work nicely) and give them an id of `curTemp`, `forecast`, and `conditions`.
+-- `curTemp` - Displays the current temperature.
+-- `forecast` - Displays a full seven day forecast.
+-- `conditions` - Displays the latest data for the area such as temperature, realitive humidity, and wind speed.
 
 ## Post Installation
 Once you've got your widgets displaying on the page, feel free to style them however you'd like. You can inspect the elements in our browser's Dev Tools to see the class structure for each widget. 
 I created the classes to work nicely with a B.E.M. format and Less, but you can style them in straight CSS if you prefer.
 
 ## Known Issues
-- Must have valid DOM elements for all of the section ID's: `curTemp`, `forecast`, and `conditions` otherwise an error will be thrown in React. To be fixed on a future release, in the 
-meantime any unwanted element(s) can be hidden in CSS as a work around.
 
 - Location of forecast is hard coded in, a future release will incorporate a way to customize the location. Finding the correct location in the NWS API is not exactly straight forward,
 but if you want to make the adjustment yourself first, get the geolocation coordinates (Lat, long) for your address. Secondly, you'll need to use that data to locate the appropriate `stationID` 
 for your locale. Finally, once you have the ID replace anywhere you see `KUOA` in the code with your station ID.
 
-## Release Notes
-
+## ChangeLog
+- 1.0.1 - Updated code so each widget can be added to a site independently without breaking if any of the required DOM elements are not present.
 - 1.0.0 - Initial Release
